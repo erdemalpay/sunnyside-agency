@@ -9,12 +9,13 @@
   <p class="content text-smokey-gray">
     <slot name="content"/>
   </p>
-  <button class="group uppercase">
+  
+  <a href='/' class="group uppercase">
     <h5>
       Learn more
     </h5>
     <div class={`w-32 h-2 rounded-3xl opacity-25 group-hover:opacity-100 bg-${color} -mt-2`}></div>
-  </button>
+  </a>
 </section>
 <style>
   .title {

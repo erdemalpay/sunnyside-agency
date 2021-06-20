@@ -3,7 +3,7 @@
   export let name;
 </script>
 
-<button class="text-footer-green hover:text-white">
+<button title={name} class="text-footer-green hover:text-white">
   <InlineSvg src={`/images/icon-${name}.svg`} />
 </button>
 <!-- <img class="text-white" src={`/images/icon-${name}.svg`} alt={name}/> -->

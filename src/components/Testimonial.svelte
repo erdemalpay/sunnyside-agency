@@ -4,7 +4,7 @@
 </script>
 <div class="text-center w-1/3 flex-col items-center">
   <div class="w-full flex justify-center mb-14">
-    <img {src} {alt} class="rounded-full" />
+    <img {src} {alt} class="rounded-full w-18 h-18"/>
   </div>
   <p class='content mb-16'>
     <slot name="description"/>
