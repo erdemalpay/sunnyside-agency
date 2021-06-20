@@ -2,7 +2,7 @@ const production = !process.env.ROLLUP_WATCH;
 module.exports = {
   purge: [
     './src/**/*.html',
-    './src/**/*.js',
+    './src/**/*.svelte',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
