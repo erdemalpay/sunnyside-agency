@@ -1,5 +1,6 @@
 <script>
   export let color;
+
 </script>
 
 <section class="bg-smokey-white w-1/2 p-40 pr-28 space-y-8">
@@ -9,13 +10,14 @@
   <p class="content text-smokey-gray">
     <slot name="content"/>
   </p>
-  
-  <a href='/' class="group uppercase">
-    <h5>
-      Learn more
-    </h5>
-    <div class={`w-32 h-2 rounded-3xl opacity-25 group-hover:opacity-100 bg-${color} -mt-2`}></div>
-  </a>
+  <div class="group w-32 flex flex-col">
+    <button class="text-center uppercase z-20">
+      <span>
+        Learn more
+      </span>
+    </button>
+    <div class={`w-32 h-2 rounded-3xl opacity-25 group-hover:opacity-100 z-10 -mt-2 bg-${color}`}></div>
+  </div>
 </section>
 <style>
   .title {
@@ -45,6 +47,5 @@
     font-weight: 900;
     line-height: 25px;
     letter-spacing: 1px;
-    text-align: left;
   }
 </style>
