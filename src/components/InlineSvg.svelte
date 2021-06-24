@@ -16,9 +16,9 @@
 </script>
 
 {#if svgString}
-  <div class="svg-wrapper">
+  <span class="svg-wrapper">
     {@html svgString}
-  </div>
+  </span>
 {/if}
 
 <style>
