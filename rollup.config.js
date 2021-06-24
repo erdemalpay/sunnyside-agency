@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import copy from 'rollup-plugin-copy';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -57,6 +58,17 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
+		copy({
+      targets: [
+        { src: 'src/static/*', dest: 'public' },
+        {
+          src: 'src/index.html',
+          dest: 'public',
+          transform: (contents) =>
+            contents.toString().replace(/__TIMESTAMP__/g, Date.now()),
+        },
+      ],
+    }),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated

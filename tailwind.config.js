@@ -1,14 +1,24 @@
 const production = !process.env.ROLLUP_WATCH;
 module.exports = {
-  purge: [
-    './src/**/*.html',
-    './src/**/*.svelte',
-  ],
+  mode: 'jit',
+  purge: { content: [
+  './src/index.html',
+  './src/**/*.{js,svelte}'
+  ], 
+  safelist: [
+    'bg-photography',
+    'bg-graphic-design',
+    'bg-light-yellow',
+    'bg-light-red',
+    'text-dark-blue',
+    'text-mid-blue',
+    'text-dark-green',
+    'text-mid-green',
+  ]},
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        'primary-blue': '#40BEFF',
         'darkest-blue': '#24303E',
         'smokey-white': '#F2F2F2',
         'smokey-gray': '#808397',
