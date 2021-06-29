@@ -2,7 +2,7 @@
   import { createEventDispatcher } from 'svelte';
 
   export let src;
-
+  
   let svgString = '';
   const dispatch = createEventDispatcher();
   loadSvg();
@@ -16,7 +16,7 @@
 </script>
 
 {#if svgString}
-  <span class="svg-wrapper">
+  <span class="svg-wrapper w-full">
     {@html svgString}
   </span>
 {/if}

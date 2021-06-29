@@ -3,15 +3,13 @@
   export let bgImage;
 </script>
 
-<section class={`bg-${bgImage} w-1/2 pt-100 px-48`}>
-  <div class="space-y-8">
-    <h2 class={`title text-dark-${color}`}>
-      <slot name="title"/>
-    </h2>
-    <h5 class={`content text-mid-${color}`}>
-      <slot name="content"/>
-    </h5>
-  </div>
+<section class={`bg-${bgImage}-mobile sm:bg-${bgImage} w-full sm:w-1/2 pt-100 px-48 space-y-8`}>
+  <h2 class={`title text-dark-${color}`}>
+    <slot name="title"/>
+  </h2>
+  <h5 class={`content text-mid-${color}`}>
+    <slot name="content"/>
+  </h5>
 </section>
 
 <style>
