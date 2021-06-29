@@ -3,15 +3,15 @@
 
 </script>
 
-<section class="bg-smokey-white w-1/2 p-40 pr-28 space-y-8">
-  <h2 class="title text-darkest-blue">
+<section class="bg-smokey-white w-full sm:w-1/2 px-6 py-16 sm:p-40 sm:pr-28 text-center sm:text-left sm:h-150">
+  <h2 class="title text-darkest-blue mb-6 sm:mb-8">
     <slot name="title"/>
   </h2>
-  <p class="content text-smokey-gray">
+  <p class="content text-smokey-gray mb-8 sm:mb-10">
     <slot name="content"/>
   </p>
-  <div class="group w-32 flex flex-col">
-    <button class="text-center uppercase z-20">
+  <div class="group w-full flex flex-col items-center sm:items-start">
+    <button class="text-center sm:text-left uppercase z-20">
       <span>
         Learn more
       </span>
@@ -25,9 +25,8 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 900;
-    line-height: 49px;
+    line-height: 49px;  
     letter-spacing: -0.2857142984867096px;
-    text-align: left;
   }
 
   .content {
@@ -37,7 +36,6 @@
     font-weight: 600;
     line-height: 30px;
     letter-spacing: -0.12857143580913544px;
-    text-align: left;
   }
 
   button {

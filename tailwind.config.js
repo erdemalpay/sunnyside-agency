@@ -8,6 +8,8 @@ module.exports = {
   safelist: [
     'bg-photography',
     'bg-graphic-design',
+    'bg-photography-mobile',
+    'bg-graphic-design-mobile',
     'bg-light-yellow',
     'bg-light-red',
     'text-dark-blue',
@@ -43,8 +45,11 @@ module.exports = {
        },
        backgroundImage: {
         'header': "url('/images/desktop/image-header.jpg')",
+        'header-mobile': "url('/images/mobile/image-header.jpg')",
         'graphic-design': "url('/images/desktop/image-graphic-design.jpg')",
-        'photography': "url('/images/desktop/image-photography.jpg')"
+        'graphic-design-mobile': "url('/images/mobile/image-graphic-design.jpg')",
+        'photography': "url('/images/desktop/image-photography.jpg')",
+        'photography-mobile': "url('/images/mobile/image-photography.jpg')"
        }
     },
   },

@@ -9,14 +9,18 @@
 	
 </script>
 
-<main class="w-360 bg-smokey-white">
+<main class="w-[375px] sm:w-360 bg-smokey-white">
 	<!-- Header -->
-	<header class="bg-header bg-cover h-200">
-		<div class="flex px-10 py-8">
-			<div class="flex align-middle text-white">
+	<header class="bg-header-mobile sm:bg-header bg-cover w-full sm:w-auto h-[538px] sm:h-200">
+		<div class="flex px-6 sm:px-10 pt-8">
+			<div class="flex align-middle text-white w-[124px] h-[25px] sm:w-[170px] sm:h-[33px]">
 				<InlineSvg src="/images/logo.svg"/>
 			</div>
-			<div class="flex flex-auto justify-end text-white space-x-10">
+			<div class="block sm:hidden w-full"/>
+			<div class="flex sm:hidden align-middle justify-end text-white w-[24px] h-[18px]">
+				<InlineSvg src="/images/icon-hamburger.svg"/>
+			</div>
+			<div class="hidden sm:flex flex-auto justify-end text-white space-x-10">
 				<HeaderButton label="About"/>
 				<HeaderButton label="Services"/>
 				<HeaderButton label="Projects"/>
@@ -34,18 +38,18 @@
 				">Contact</button>
 			</div>
 		</div>
-		<div class="mt-12">
+		<div class="mt-[88px] sm:mt-[105px] px-6 sm:px-0">
 			<h1 class="creatives text-white uppercase">
 			We are creatives
 			</h1>
-			<div class="flex justify-center mt-28">
-				<img class="hover:animate-bounce" src="/images/icon-arrow-down.svg" alt="arrow"/>
+			<div class="flex justify-center mt-[52px] sm:mt-24">
+				<img class="" src="/images/icon-arrow-down.svg" alt="arrow"/>
 			</div>
 		</div>
 	</header>
 	<!-- Content -->
 	<div>
-		<div class="flex w-full">
+		<div class="flex flex-col-reverse sm:flex-row w-full">
 			<LearnMoreSection color="light-yellow">
 				<span slot="title">
 					Transform your brand
@@ -55,12 +59,12 @@
 					Engage your clients through compelling visuals that do most of the marketing for you.
 				</span>
 			</LearnMoreSection>
-			<div class="w-1/2">
+			<div class="w-full sm:w-1/2">
 				<img src="/images/desktop/image-transform.jpg" alt="egg"/>	
 			</div>
 		</div>
-		<div class="flex w-full">
-			<div class="w-1/2">
+		<div class="flex flex-col sm:flex-row w-full">
+			<div class="w-full sm:w-1/2">
 				<img src="/images/desktop/image-stand-out.jpg" alt="glass"/>	
 			</div>
 			<LearnMoreSection color="light-red">
@@ -72,7 +76,7 @@
 				</span>
 			</LearnMoreSection>
 		</div>
-		<div class="flex w-full h-150 text-center">
+		<div class="flex flex-col sm:flex-row w-full h-150 text-center">
 			<ServiceSection color="green" bgImage="graphic-design">
 				<span slot="title">
 					Graphic design
@@ -181,12 +185,24 @@
 
 	.creatives {
 		font-family: Fraunces;
-		font-size: 56px;
+		font-size: 40px;
 		font-style: normal;
 		font-weight: 900;
-		line-height: 69px;
-		letter-spacing: 8.75px;
+		line-height: 49px;
+		letter-spacing: 6.25px;
 		text-align: center;
+	}
+
+	@media (min-width: 640px) {
+		.creatives {
+			font-family: Fraunces;
+			font-size: 56px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: 69px;
+			letter-spacing: 8.75px;
+			text-align: center;
+		}
 	}
 
 	.testimonials-title {
