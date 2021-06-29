@@ -40,7 +40,7 @@
 		</div>
 		<div class="mt-[88px] sm:mt-[105px] px-6 sm:px-0">
 			<h1 class="creatives text-white uppercase">
-			We are creatives
+			We are creatives ERDEM ALPAY DENEME
 			</h1>
 			<div class="flex justify-center mt-[52px] sm:mt-24">
 				<img class="" src="/images/icon-arrow-down.svg" alt="arrow"/>
